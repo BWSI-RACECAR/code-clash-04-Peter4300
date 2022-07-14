@@ -27,7 +27,7 @@ class Solution:
     def validateName(self,input):
         # type input: string
         # return: bool
-        return len(input) != len(set(input))
+        return len(input) == len(set(input))
 
 def main():
     string1 = input()
