@@ -27,14 +27,7 @@ class Solution:
     def validateName(self,input):
         # type input: string
         # return: bool
-
-        lis = []
-        for char in input:
-            if char not in lis:
-                lis.append(char)
-            else:
-                return False
-        return True
+        return len(input) != len(set(input))
 
 def main():
     string1 = input()
