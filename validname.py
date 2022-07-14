@@ -27,9 +27,14 @@ class Solution:
     def validateName(self,input):
         # type input: string
         # return: bool
-            
-        # TODO: Write code below to return a bool with the solution to the prompt
-        pass
+
+        lis = []
+        for char in input:
+            if char not in lis:
+                lis.append(char)
+            else:
+                return False
+        return True
 
 def main():
     string1 = input()
